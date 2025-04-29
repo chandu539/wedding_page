@@ -61,16 +61,16 @@ function Wedding() {
 
   return (
     <div className="wedding-page">
-      <div className="video-section">
+      <section className="video-section">
         <iframe
+          className="wedding-video-frame"
           src="https://drive.google.com/file/d/1v6MVxY7TXomxeuBDYCouElxehmzqQwHH/preview"
-          width="100%"
-          height="480"
           allow="autoplay"
           allowFullScreen
           title="Wedding Video"
-        />
-      </div>
+        ></iframe>
+      </section>
+
 
       {/* Countdown Timer */}
       <div className="countdown-section">
