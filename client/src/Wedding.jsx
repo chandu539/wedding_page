@@ -62,10 +62,14 @@ function Wedding() {
   return (
     <div className="wedding-page">
       <div className="video-section">
-        <video controls className="wedding-video">
-          <source src="/video.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+        <iframe
+          src="https://drive.google.com/file/d/1v6MVxY7TXomxeuBDYCouElxehmzqQwHH/preview"
+          width="100%"
+          height="480"
+          allow="autoplay"
+          allowFullScreen
+          title="Wedding Video"
+        />
       </div>
 
       {/* Countdown Timer */}
