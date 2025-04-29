@@ -62,14 +62,19 @@ function Wedding() {
   return (
     <div className="wedding-page">
       <section className="video-section">
-        <iframe
-          className="wedding-video-frame"
-          src="https://drive.google.com/file/d/1v6MVxY7TXomxeuBDYCouElxehmzqQwHH/preview"
-          allow="autoplay"
-          allowFullScreen
-          title="Wedding Video"
-        ></iframe>
+        <div className="video-frame-wrapper">
+          <iframe
+            className="wedding-video-frame"
+            src="https://www.youtube.com/embed/VvUWaxC6hgc?autoplay=1&mute=1&loop=1&playlist=VvUWaxC6hgc&controls=0&modestbranding=1&rel=0&showinfo=0"
+            title="Wedding Video"
+            frameBorder="0"
+            allow="autoplay"
+          ></iframe>
+        </div>
       </section>
+
+
+
 
 
       {/* Countdown Timer */}
@@ -223,7 +228,7 @@ function Wedding() {
         
         <div className="footer-links">
             <a href="/">Home</a>
-            <a href="/contact">Contact Us</a>
+            <a href="#"><strong>Contact : </strong>9948949806</a>
         </div>
 
         <div className="footer-quote">

@@ -1,21 +1,33 @@
 /* Wedding.jsx - Video Section Styling */
 .video-section {
-  background-color: #f2f2f2;
-  padding: 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  height: 100vh; /* Full viewport height */
+  align-items: center;
+  padding: 0;
   margin: 0;
+  min-height: 40vh;
+  background-color:white; /* Optional for better look */
+}
+
+.video-frame-wrapper {
+  position: relative;
+  width: 90vw; /* Adjusts automatically */
+  height: 5vh;
+  max-width: 1000px;
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+  overflow: hidden;
+  border-radius: 5px;
 }
 
 .wedding-video-frame {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 80vh;
+  height: 100%;
   border: none;
-  border-radius: 5px;
 }
+
 
 /* Countdown Section */
 .countdown-section {
@@ -186,14 +198,53 @@
 
 @media (max-width: 768px) {
   .couple-grid {
-    grid-template-columns: repeat(2, 1fr); /* Keep 2 columns on tablets */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 50px;
+    margin-left: 10px;
   }
+  
+.couple-grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;;
 }
 
+.couple-grid-item img {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+}
 @media (max-width: 400px) {
   .couple-grid {
-    grid-template-columns: repeat(2, 1fr); /* Keep 2 columns on small phones */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    max-width: 50px;
+    margin-left: 10px;
   }
+  
+.couple-grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;;
+}
+
+.couple-grid-item img {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+
 }
 
 /* Wedding Info Section */
